@@ -120,7 +120,7 @@ This next example sets the data compression to columnstore on some partitions, a
 ALTER TABLE ColumnstoreTable1   
 REBUILD PARTITION = ALL WITH (  
     DATA_COMPRESSION =  COLUMNSTORE ON PARTITIONS (4,5),  
-    DATA COMPRESSION = COLUMNSTORE_ARCHIVE ON PARTITIONS (1,2,3)  
+    DATA_COMPRESSION = COLUMNSTORE_ARCHIVE ON PARTITIONS (1,2,3)  
 ) ;  
 ```  
   
